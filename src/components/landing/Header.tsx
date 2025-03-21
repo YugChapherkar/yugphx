@@ -12,7 +12,7 @@ interface HeaderProps {
 }
 
 const Header = ({
-  logo = "VideoAI",
+  logo = "VideoResizer AI",
   navLinks = [
     { label: "Home", href: "/" },
     { label: "Features", href: "#features" },
@@ -74,7 +74,7 @@ const Header = ({
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          
+
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}

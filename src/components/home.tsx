@@ -45,9 +45,6 @@ const Home = () => {
 
       {/* Features Section */}
       <GlowingEffectDemo/>
-      {/* <FeaturesSection /> */}
-        {/* <BentoGridThirdDemo/> */}
-      {/* Content Section with Technology, User Scenarios, and CTA */}
       <ContentSection />
 
       {/* Pricing Section - Could be added here */}

@@ -1,4 +1,4 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Code, Cpu, Cloud, Users, ArrowRight } from "lucide-react";
@@ -16,6 +16,7 @@ interface ContentSectionProps {
 }
 
 const ContentSection = ({ className }: ContentSectionProps = {}) => {
+  const navigate = useNavigate();
   return (
     <section className={cn("py-24 bg-slate-50 dark:bg-slate-900", className)}>
       <div className="container px-4 md:px-6">
@@ -213,7 +214,7 @@ const ContentSection = ({ className }: ContentSectionProps = {}) => {
               simplified their video production process.
             </p>
           </div>
-          <Button size="lg" className="mt-4 group">
+          <Button size="lg" className="mt-4 group" onClick={() => navigate("/auth")}>
             Try it for free
             <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Button>
