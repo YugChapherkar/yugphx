@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { motion } from "framer-motion";
 
 interface HeaderProps {
   logo?: string;
@@ -73,7 +74,14 @@ const Header = ({
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="absolute top-20 left-0 right-0 z-50 bg-background border-b border-border/40 md:hidden">
+          
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="absolute top-20 left-0 right-0 z-50 bg-background border-b border-border/40 md:hidden"
+          >
             <nav className="container py-4 px-4">
               <ul className="flex flex-col space-y-4">
                 {navLinks.map((link, index) => (
@@ -94,7 +102,8 @@ const Header = ({
                 </li>
               </ul>
             </nav>
-          </div>
+          </motion.div>
+          
         )}
       </div>
     </header>

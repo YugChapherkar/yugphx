@@ -80,9 +80,9 @@ const ContentSection = ({ className }: ContentSectionProps = {}) => {
               <li className="flex items-start gap-3">
                 <Code className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-medium">FFmpeg Integration</h4>
+                  <h4 className="font-medium">Opencv Integration</h4>
                   <p className="text-sm text-slate-500 dark:text-slate-400">
-                    We use industry-standard FFmpeg libraries for high-quality
+                    We use industry-standard OpenCV libraries for high-quality
                     video processing and format conversion.
                   </p>
                 </div>
@@ -108,7 +108,7 @@ const ContentSection = ({ className }: ContentSectionProps = {}) => {
           viewport={{ once: true }}
           className="mb-20"
         >
-          <h3 className="text-2xl font-bold text-center mb-10">
+          <h3 className="text-3xl font-bold text-center mb-10">
             User Scenarios
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -128,11 +128,11 @@ const ContentSection = ({ className }: ContentSectionProps = {}) => {
                 <div className="flex items-center mt-4 space-x-3">
                   <img
                     src="https://api.dicebear.com/7.x/avataaars/svg?seed=Alex"
-                    alt="Alex, Content Creator"
+                    alt="Yug Chapherkar, YouTuber"
                     className="w-10 h-10 rounded-full"
                   />
                   <div>
-                    <p className="text-sm font-medium">Alex Johnson</p>
+                    <p className="text-sm font-medium">Yug Chapherkar</p>
                     <p className="text-xs text-slate-500">1.2M Subscribers</p>
                   </div>
                 </div>
@@ -154,11 +154,11 @@ const ContentSection = ({ className }: ContentSectionProps = {}) => {
                 <div className="flex items-center mt-4 space-x-3">
                   <img
                     src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah"
-                    alt="Sarah, Marketing Director"
+                    alt="Rahul Bokade, Marketing Director"
                     className="w-10 h-10 rounded-full"
                   />
                   <div>
-                    <p className="text-sm font-medium">Sarah Chen</p>
+                    <p className="text-sm font-medium">Rahul Bokade</p>
                     <p className="text-xs text-slate-500">
                       Marketing Director, TechBrand
                     </p>
@@ -182,11 +182,11 @@ const ContentSection = ({ className }: ContentSectionProps = {}) => {
                 <div className="flex items-center mt-4 space-x-3">
                   <img
                     src="https://api.dicebear.com/7.x/avataaars/svg?seed=Michael"
-                    alt="Michael, Product Manager"
+                    alt="Swayman, Product Manager"
                     className="w-10 h-10 rounded-full"
                   />
                   <div>
-                    <p className="text-sm font-medium">Michael Rodriguez</p>
+                    <p className="text-sm font-medium">Swayman</p>
                     <p className="text-xs text-slate-500">
                       Product Manager, Enterprise Co.
                     </p>

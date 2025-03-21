@@ -5,6 +5,10 @@ import HeroSection from "./landing/HeroSection";
 import FeaturesSection from "./landing/FeaturesSection";
 import ContentSection from "./landing/ContentSection";
 import Footer from "./landing/Footer";
+import { BentoGridThirdDemo } from "./ui/Aceternity/bento-grid-demo";
+import { GlowingEffectDemo } from "./ui/Aceternity/GlowingEffectDemo";
+import Pricing from "./landing/Pricing";
+// import { BentoGridDemo } from "./ui/Aceternity/bento-grid-demo";
 
 const Home = () => {
   return (
@@ -40,138 +44,14 @@ const Home = () => {
       />
 
       {/* Features Section */}
-      <FeaturesSection />
-
+      <GlowingEffectDemo/>
+      {/* <FeaturesSection /> */}
+        {/* <BentoGridThirdDemo/> */}
       {/* Content Section with Technology, User Scenarios, and CTA */}
       <ContentSection />
 
       {/* Pricing Section - Could be added here */}
-      <section id="pricing" className="py-20 bg-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Simple, Transparent Pricing
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
-            Choose the plan that works best for your video content needs
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {/* Free Plan */}
-            <div className="border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold mb-2">Free</h3>
-              <p className="text-gray-500 mb-4">Perfect for getting started</p>
-              <div className="text-4xl font-bold mb-6">
-                $0
-                <span className="text-lg font-normal text-gray-500">
-                  /month
-                </span>
-              </div>
-              <ul className="text-left space-y-3 mb-8">
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span> 5 video
-                  conversions per month
-                </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span> Basic platform
-                  templates
-                </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span> 720p max
-                  resolution
-                </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span> Standard
-                  processing speed
-                </li>
-              </ul>
-              <button className="w-full py-2 px-4 border border-primary text-primary rounded-lg hover:bg-primary/10 transition-colors">
-                Get Started
-              </button>
-            </div>
-
-            {/* Pro Plan */}
-            <div className="border-2 border-primary rounded-xl p-8 shadow-lg relative">
-              <div className="absolute top-0 right-0 bg-primary text-white text-xs px-3 py-1 rounded-bl-lg rounded-tr-lg font-medium">
-                POPULAR
-              </div>
-              <h3 className="text-2xl font-bold mb-2">Pro</h3>
-              <p className="text-gray-500 mb-4">For content creators</p>
-              <div className="text-4xl font-bold mb-6">
-                $19
-                <span className="text-lg font-normal text-gray-500">
-                  /month
-                </span>
-              </div>
-              <ul className="text-left space-y-3 mb-8">
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span> 50 video
-                  conversions per month
-                </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span> All platform
-                  templates
-                </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span> 4K resolution
-                  support
-                </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span> Faster
-                  processing
-                </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span> Batch
-                  processing
-                </li>
-              </ul>
-              <button className="w-full py-2 px-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">
-                Subscribe Now
-              </button>
-            </div>
-
-            {/* Business Plan */}
-            <div className="border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold mb-2">Business</h3>
-              <p className="text-gray-500 mb-4">For teams and agencies</p>
-              <div className="text-4xl font-bold mb-6">
-                $49
-                <span className="text-lg font-normal text-gray-500">
-                  /month
-                </span>
-              </div>
-              <ul className="text-left space-y-3 mb-8">
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span> Unlimited video
-                  conversions
-                </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span> Custom
-                  templates
-                </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span> 8K resolution
-                  support
-                </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span> Priority
-                  processing
-                </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span> Advanced batch
-                  processing
-                </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span> API access
-                </li>
-              </ul>
-              <button className="w-full py-2 px-4 border border-primary text-primary rounded-lg hover:bg-primary/10 transition-colors">
-                Contact Sales
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
+     <Pricing/>
       {/* FAQ Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">

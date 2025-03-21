@@ -17,7 +17,7 @@ const HeroSection = ({
   watchDemoText = "Watch Demo",
 }: HeroSectionProps) => {
   return (
-    <section className="w-full bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20 md:py-32 px-4 md:px-8 lg:px-16 min-h-[700px] flex items-center">
+    <section className="w-full h-screen bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20 md:py-32 px-4 md:px-8 lg:px-16 min-h-[700px] flex items-center">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Column - Text Content */}
         <motion.div
@@ -38,28 +38,28 @@ const HeroSection = ({
               className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-8"
               asChild
             >
-              <a href="/dashboard">
+              <a href="/auth">
                 {ctaText} <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>
-            <Button
+            {/* <Button
               variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white/10"
+              className="border-white text-black hover:bg-white/10 hover:text-white"
             >
-              <Play className="mr-2 h-5 w-5" /> {watchDemoText}
-            </Button>
+              <Play className="mr-2 h-5 w-5 text-black hover:text-white" /> {watchDemoText}
+            </Button> */}
           </div>
           <div className="pt-6">
             <p className="text-sm text-slate-400">
-              Trusted by content creators worldwide
+              Trusted by Most Popular Platforms
             </p>
             <div className="flex flex-wrap gap-8 mt-4 opacity-70">
               {/* Placeholder logos - replace with actual brand logos */}
-              <div className="h-8 w-24 bg-white/20 rounded"></div>
-              <div className="h-8 w-24 bg-white/20 rounded"></div>
-              <div className="h-8 w-24 bg-white/20 rounded"></div>
-              <div className="h-8 w-24 bg-white/20 rounded"></div>
+              <div className="h-8 w-24 rounded"><img src="/assets/instagram/Instagram_Symbol_Alternative_2.webp" alt="instagram"/></div>
+              <div className="h-8 w-24 rounded"><img src="/assets/TikTok/TikTok_Logo_Alternative_2.webp" alt="TikTok"/></div>
+              <div className="h-8 w-24 rounded"><img src="/assets/YouTube/YouTube_Symbol_2.webp" alt="Youtube"/></div>
+              <div className="h-8 w-24 rounded"><img src="/assets/Snapchat/Snapchat_Symbol_2.webp" alt="instagram"/></div>
             </div>
           </div>
         </motion.div>
